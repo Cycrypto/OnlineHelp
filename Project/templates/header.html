@@ -1,0 +1,51 @@
+{% load static %}
+<!doctype html>
+<html lang = 'ko'>
+	<head>
+		<meta charset="UTF-8">
+		<title>온라인 도움 사이트에 오신것을 환영합니다</title>
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		  <div class="row">
+		    <div class="span12">
+		      <div class="head">
+		        <div class="row-fluid">
+		            <div class="span12">
+		                <div class="span6">
+		                    <h1 class="muted">온도 로고 또는 텍스트</h1>
+		                </div>
+
+		                <div class="span4 offset2" style="margin-top:15px;">
+		                    <button class="btn pull-right" type="button">로그인</button>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="navbar">
+		            <div class="navbar-inner">
+		                <div class="container">
+		                    <ul class="nav">
+		                        <li>
+		                            <a href="#">카테고리</a>
+		                        </li>
+		                        <li>
+		                            <a href="#">생성</a>
+		                        </li>
+		                        <li>
+		                            <a href="#">예시</a>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		{% block content %}
+		{% endblock %}
+	</body>
+</html>

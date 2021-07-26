@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from OnlineHelp.views import MainPage, Cover
+from OnlineHelp.views import MainPage, Cover, DocsPage
 
 urlpatterns = [
     path('', Cover),
     path('admin/', admin.site.urls),
     path('OnlineHelp/', MainPage),
+    path('OnlineHelp/docs/', DocsPage),
 ]
